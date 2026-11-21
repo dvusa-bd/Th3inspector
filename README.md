@@ -180,3 +180,26 @@ perl Th3inspector.pl
 <strong>What's New </strong>
 <p>• speed up<p>
 <p>• Bug fixes<p>
+
+
+---
+
+## Th3inspector Studio (Web)
+
+A bilingual English/Bangla JavaScript and userscript workspace is available in the `web/` directory.
+
+- Userscript library: import, organize, edit, enable/disable library entries, and export `.js` / `.user.js` files.
+- JavaScript editor with syntax validation.
+- Sandboxed developer console with log, info, warn, error and table output.
+- App-origin network monitor, browser diagnostics, Service Worker listing and performance snapshot.
+- Integration directory for GitHub, Vercel, Tampermonkey, Violentmonkey and Greasemonkey.
+- Responsive mobile UI with English/Bangla language switch.
+
+Run locally:
+
+```sh
+cd web
+python -m http.server 8080
+```
+
+Open `http://127.0.0.1:8080`. The original Perl CLI and its install/update/config/license files remain at the repository root. The Studio is a static app; userscripts must be installed in a browser userscript manager to run on websites. Its sandbox does not inject into other tabs or replace native DevTools.
